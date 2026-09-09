@@ -40,12 +40,12 @@ app.get("/users/:id", (req, res) => {
 
 // /tasks/:id route
 
-app.post("/tasks/:id", (req, res) => {
+app.put("/tasks/:id", (req, res) => {
   const { title } = req.body;
   const { id } = req.params;
   res.json({ title, id });
 });
 
-app.listen(port, (req, res) => {
+app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
