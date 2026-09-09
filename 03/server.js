@@ -13,5 +13,5 @@ app.listen(port, () => {
 });
 
 // If a request GET /api/products/99 came through the server,
-// req.baseUrl = /api/products and req.path = /:id.
+// req.baseUrl = /api/products and req.path = /99.
 // req.path just focuses on the everything after the base URL excluding the queries.
