@@ -7,6 +7,7 @@ const port = process.env.PORT || 3000;
 
 app.use("/api/products", productsRouter);
 app.use("/api/articles", articlesRouter);
+app.use("/tasks", taskRouter);
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
